@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aman - Frontend Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-container">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Loading...</div>
+      <div class="loading-progress">
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">Aman Singh</span>
+      </div>
+      <div class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name">Aman singh</span>
+          </h1>
+          <p class="hero-subtitle">Frontend Developer</p>
+          <p class="hero-description">
+            I create stunning web experiences with modern technologies and
+            creative design.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-container">
+            <div class="avatar-glow"></div>
+            <img src="assets/WhatsApp Image 2025-11-07 at 22.18.33_4c095886.jpg" alt="Aman" class="avatar-image" />
+          </div>
+        </div>
+      </div>
+      <div class="hero-particles" id="particles-js"></div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a passionate frontend developer with a keen eye for design and
+            a love for creating interactive web experiences. With expertise in
+            modern web technologies, I bring ideas to life through clean,
+            efficient, and visually appealing code.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies,
+            contributing to open-source projects, or sharing knowledge with
+            the developer community.
+          </p>
+        </div>
+        <div class="about-image">
+          <div class="code-window">
+            <div class="code-header">
+              <div class="code-buttons">
+                <span class="code-button red"></span>
+                <span class="code-button yellow"></span>
+                <span class="code-button green"></span>
+              </div>
+              <span class="code-title">portfolio.js</span>
+            </div>
+            <div class="code-content">
+              <pre><code>const developer = {
+  name: 'Aman',
+  skills: ['HTML', 'CSS', 'JavaScript', 'React' ,'Tailwind css', 'Figma', 'Git', 'Bootstrap',],
+  passion: 'Creating amazing web experiences',
+  goal: 'Building the future of the web'
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="30">0</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Frontend</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML5</span>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="95%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">CSS3</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">React</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Bootstrap</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-category-title">Tools & Others</h3>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git</span>
+              <span class="skill-percentage">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="88%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Node.js</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Figma</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="70%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Tailwind css</span>
+              <span class="skill-percentage">75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Ui-Material</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some of my recent work</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/Gemini_Generated_Image_qdjzrcqdjzrcqdjz.png" alt="Project 1" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/amanrajput39053-hue/furniture-site-ui.git" class="project-link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Furniture UI Website – Modern Responsive E-Commerce Interface</h3>
+            <p class="project-description">
+              A responsive furniture e-commerce UI showcasing modern layouts, product displays, and seamless browsing
+              across devices.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/Gemini_Generated_Image_vtw236vtw236vtw2.png" alt="Project 2" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/amanrajput39053-hue/Advocate-Gourav.git" class="project-link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Advocate Website UI – Professional Legal Services Website</h3>
+            <p class="project-description">
+              A responsive advocate website UI designed to showcase legal services with a clean, professional, and
+              trustworthy layout.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Tailwindcss</span>
+              <span class="tech-tag">Html</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/Gemini_Generated_Image_o497n0o497n0o497.png" alt="Project 3" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/amanrajput39053-hue/RozerPay-clone-ui.git" class="project-link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Payment Gateway Website UI – Razorpay-Inspired Fintech Interface</h3>
+            <p class="project-description">
+              A Razorpay-inspired payment gateway UI showcasing modern fintech design, responsive layouts, and
+              user-focused sections.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Tailwindcss</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Jax</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a
+                href="mailto:amanrajput39053@gmail.com?subject=Job%20Inquiry&body=Hello%20Sir,%0D%0AI%20would%20like%20to%20discuss%20a%20potential%20job%20opportunity%20with%20you.%0D%0A%0D%0ABest%20regards,">
+                Amanrajput39053@gmail.com
+              </a>
+
+
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <a href="tel:9354548326">9354548326</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <a href="https://www.google.com/maps/search/?api=1&query=Dabua+Faridabad+Haryana"
+                target="_blank">Faridabad,Haryana</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/amanrajput39053-hue" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://profile.indeed.com/" class="social-link"><i class="fas fa-briefcase"></i></a>
+            <a class="social-link" href="https://wa.me/919354548326?text=Hello%20Aman,%0AWe%20came%20across%20your%20profile%20and%20found%20it%20very%20interesting.%20
+We%20would%20like%20to%20schedule%20an%20interview%20to%20discuss%20how%20your%20skills%20align%20with%20our%20team.%20
+
+%0APlease%20let%20us%20know%20a%20suitable%20time%20to%20connect.%20
+
+%0ARegards,%20
+%0A[Company%20/%20HR%20Team]%20" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required />
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Aman. All rights reserved.</p>
+        <div class="footer-links">
+
+          <a href="assets/Aman resume.pdf" download class="btn btn-primary">
+            Download Resume
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mouse Trail -->
+  <div class="mouse-trail"></div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
